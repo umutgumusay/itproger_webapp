@@ -9,13 +9,15 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat;wqht@200;500&display=swap');
 
-        * {
+        /* * {
           margin: 0;
           padding: 0;
-          box-sizing: border-box;
-        }
+        } */
 
         body {
+          display: flex;
+          justify-content: center;
+          margin: 10px;
           font-family: 'Montserrat', sans-serif;
           font-weight: 200;
           color: var(--tg-theme-text-color);
@@ -23,25 +25,28 @@
         }
 
         #main {
-          margin: auto;
-          width: 100%;
-          padding: 0px;
+          /* width: 100%; */
+          /* padding: auto; */
           text-align: center;
+          /* background-color: red; */
         }
 
         h1 {
-          margin-top: 50px;
-          margin-bottom: 10px;
+          margin: 10px;
+          padding: 10px;
+          /* background-color: green; */
         }
 
-        img {
-          width: 70px;
+        #pizza {
+          width: 80px;
           margin: 30px auto;
+          /* background-color: green; */
         }
 
         p {
           width: 350px;
           margin: 0 auto;
+          /* background-color: green; */
         }
 
         button {
@@ -61,7 +66,7 @@
         button:hover {
           background: var(--tg-theme-secondary-bg-color);
         }
-        
+
         #form {
             display: none;
             text-align: center;
@@ -85,8 +90,8 @@
 <body>
     <div id="main">
         <h1>Онлайн магазин</h1>
-        <img src="https://cdn-icons-png.flaticon.com/512/3595/3595455.png">
-        <p>Text text text text text text text text text text text text text text text text text text</p>
+        <img src="https://cdn-icons-png.flaticon.com/512/3595/3595455.png" id='pizza'>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         <button id="buy">Купить</button>
     </div>
     <form id="form">
@@ -140,4 +145,3 @@
     </script>
 </body>
 </html>
-
